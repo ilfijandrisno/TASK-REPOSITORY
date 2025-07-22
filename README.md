@@ -35,25 +35,37 @@ Program ini cocok digunakan oleh siapa saja yang ingin:
 
 ---
 
-### 📥 Contoh Input
-```bash
-Masukkan tanggal (1–31): 29
-Masukkan bulan (1–12): 2
-Masukkan tahun (>= 1000): 2025
-ℹ️ Tahun 2025 bukan tahun kabisat.
-❌ Kombinasi tidak valid: Tahun 2025 bukan tahun kabisat, jadi tidak ada 29 Februari.
-```
-
 ### 📤 Contoh Output Valid
 ```bash
-Masukkan tanggal (1–31): 17
-Masukkan bulan (1–12): 8
-Masukkan tahun (>= 1000): 1945
-ℹ️ Tahun 1945 bukan tahun kabisat.
+Masukkan tanggal (1–31): 25
+Masukkan bulan (1–12): 5
+Masukkan tahun (>= 1000): 2024
 
-📅 17-8-1945 jatuh pada hari **Jumat**
+Tahun 2024 adalah tahun kabisat.
+
+📅 25-5-2024 jatuh pada hari **Sabtu**
 ```
 
+### 📤 Contoh Output Invalid
+```bash
+Masukkan tanggal (1–31): 35
+Tanggal harus antara 1 sampai 31!
+Masukkan tanggal (1–31): 10
+
+Masukkan bulan (1–12): 15
+Bulan harus antara 1 sampai 12!
+Masukkan bulan (1–12): 12
+
+Masukkan tahun (>= 1000): 45
+Tahun harus 4 digit (misalnya 1945, 2023, dst).
+Masukkan tahun (>= 1000): 2025
+
+Tahun 2025 bukan tahun kabisat.
+
+📅 10-12-2025 jatuh pada hari **Rabu**
+```
+
+---
 ### 📚 Penjelasan Singkat Zeller’s Congruence
 Zeller’s Congruence adalah rumus yang digunakan untuk menghitung hari dalam minggu dari sebuah tanggal tertentu. Rumusnya memetakan tanggal menjadi angka antara 0–6, yang merepresentasikan:
 
@@ -69,6 +81,7 @@ Zeller’s Congruence adalah rumus yang digunakan untuk menghitung hari dalam mi
 
 📌 Januari dan Februari dihitung sebagai bulan ke-13 dan ke-14 dari tahun sebelumnya.
 
+---
 ### 🛠 Cara Menjalankan
 Pastikan kamu sudah punya Python terinstal. Jalankan di terminal:
 
