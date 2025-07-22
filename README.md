@@ -12,9 +12,7 @@ Program ini dibuat untuk menentukan hari dalam seminggu berdasarkan input **tang
 ### ✨ Fitur Utama
 ✅ Validasi input tanggal, bulan, dan tahun
 ✅ Deteksi tahun kabisat (leap year)
-✅ Peringatan khusus untuk kasus seperti 29 Februari di tahun non-kabisat
 ✅ Perhitungan hari yang akurat menggunakan Zeller's Congruence
-✅ Tampilan ramah pengguna dan informatif
 
 ---
 
@@ -56,12 +54,6 @@ Masukkan tahun (>= 1000): 1945
 📅 17-8-1945 jatuh pada hari **Jumat**
 ```
 
-### 🔄 Flowchart Program
-Berikut adalah alur kerja program secara visual:
-
-
-(Jika gambar tidak muncul, silakan unggah gambar flowchart yang telah dibuat tadi ke GitHub dan ganti URL-nya di atas)
-
 ### 📚 Penjelasan Singkat Zeller’s Congruence
 Zeller’s Congruence adalah rumus yang digunakan untuk menghitung hari dalam minggu dari sebuah tanggal tertentu. Rumusnya memetakan tanggal menjadi angka antara 0–6, yang merepresentasikan:
 
@@ -88,5 +80,5 @@ cd nama-repo
 ```
 3. Jalankan program:
 ```bash
-python zeller.py
+python app.py
 ```
